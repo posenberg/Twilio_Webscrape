@@ -23,11 +23,10 @@ print html.fromstring(page.txt)
 lotto_number=' '.join(lotto_5[:5]) + ' and powerball: ' + powerball[0]
 current_date=''.join(date)
 
-'''
+
 #Send SMS to Grandma
 client.messages.create(
 	to="1-555-555-5555", 
 	from_="+1650XXXXXXX", 
 	body= 'Hi Grandma! ' + current_date +': '+lotto_number , 
 )
-'''
